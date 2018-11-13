@@ -1,0 +1,1310 @@
+[2018-02-22 16:42:13,435] ERROR : connect rpyc server error:[Errno 111] Connection refused
+[2018-02-22 16:42:26,276] ERROR : connect rpyc server error:[Errno 111] Connection refused
+[2018-02-22 17:07:13,077] WARNING : Not Found: /favicon.ico
+[2018-02-23 17:19:14,080] ERROR : Internal Server Error: /autoadmin/server_list/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./autoadmin/views.py", line 89, in server_list
+    ServerListObj = ServerList.objects.filter(server_app_id=app_categId)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/manager.py", line 143, in filter
+    return self.get_query_set().filter(*args, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 972, in get_prep_lookup
+    return super(IntegerField, self).get_prep_lookup(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 310, in get_prep_lookup
+    return self.get_prep_value(value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 966, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+[2018-02-23 17:20:10,512] ERROR : Internal Server Error: /autoadmin/server_list/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./autoadmin/views.py", line 89, in server_list
+    ServerListObj = ServerList.objects.filter(server_app_id=app_categId)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/manager.py", line 143, in filter
+    return self.get_query_set().filter(*args, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 972, in get_prep_lookup
+    return super(IntegerField, self).get_prep_lookup(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 310, in get_prep_lookup
+    return self.get_prep_value(value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 966, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+[2018-02-24 10:07:25,352] ERROR : Internal Server Error: /autoadmin/server_app_categ/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./autoadmin/views.py", line 69, in server_app_categ
+    ServerAppObj = ServerAppCateg.objects.filter(server_categ_id=fun_categId)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/manager.py", line 143, in filter
+    return self.get_query_set().filter(*args, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 972, in get_prep_lookup
+    return super(IntegerField, self).get_prep_lookup(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 310, in get_prep_lookup
+    return self.get_prep_value(value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 966, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+[2018-02-24 10:07:38,637] ERROR : Internal Server Error: /autoadmin/server_app_categ/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./autoadmin/views.py", line 69, in server_app_categ
+    ServerAppObj = ServerAppCateg.objects.filter(server_categ_id=fun_categId)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/manager.py", line 143, in filter
+    return self.get_query_set().filter(*args, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 972, in get_prep_lookup
+    return super(IntegerField, self).get_prep_lookup(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 310, in get_prep_lookup
+    return self.get_prep_value(value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 966, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+[2018-02-24 10:07:44,853] ERROR : Internal Server Error: /autoadmin/server_app_categ/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./autoadmin/views.py", line 69, in server_app_categ
+    ServerAppObj = ServerAppCateg.objects.filter(server_categ_id=fun_categId)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/manager.py", line 143, in filter
+    return self.get_query_set().filter(*args, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 972, in get_prep_lookup
+    return super(IntegerField, self).get_prep_lookup(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 310, in get_prep_lookup
+    return self.get_prep_value(value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 966, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+[2018-02-24 10:08:37,388] ERROR : Internal Server Error: /autoadmin/server_app_categ/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./autoadmin/views.py", line 69, in server_app_categ
+    ServerAppObj = ServerAppCateg.objects.filter(server_categ_id=fun_categId)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/manager.py", line 143, in filter
+    return self.get_query_set().filter(*args, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 972, in get_prep_lookup
+    return super(IntegerField, self).get_prep_lookup(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 310, in get_prep_lookup
+    return self.get_prep_value(value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 966, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+[2018-02-24 10:08:41,899] ERROR : Internal Server Error: /autoadmin/server_app_categ/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./autoadmin/views.py", line 69, in server_app_categ
+    ServerAppObj = ServerAppCateg.objects.filter(server_categ_id=fun_categId)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/manager.py", line 143, in filter
+    return self.get_query_set().filter(*args, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 972, in get_prep_lookup
+    return super(IntegerField, self).get_prep_lookup(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 310, in get_prep_lookup
+    return self.get_prep_value(value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 966, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+[2018-02-24 10:09:11,756] ERROR : Internal Server Error: /autoadmin/server_app_categ/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./autoadmin/views.py", line 69, in server_app_categ
+    ServerAppObj = ServerAppCateg.objects.filter(server_categ_id=fun_categId)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/manager.py", line 143, in filter
+    return self.get_query_set().filter(*args, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 972, in get_prep_lookup
+    return super(IntegerField, self).get_prep_lookup(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 310, in get_prep_lookup
+    return self.get_prep_value(value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 966, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+[2018-02-24 10:09:16,296] ERROR : Internal Server Error: /autoadmin/server_app_categ/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./autoadmin/views.py", line 69, in server_app_categ
+    ServerAppObj = ServerAppCateg.objects.filter(server_categ_id=fun_categId)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/manager.py", line 143, in filter
+    return self.get_query_set().filter(*args, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 972, in get_prep_lookup
+    return super(IntegerField, self).get_prep_lookup(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 310, in get_prep_lookup
+    return self.get_prep_value(value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 966, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+[2018-02-24 11:05:25,917] ERROR : Internal Server Error: /autoadmin/server_app_categ/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./autoadmin/views.py", line 69, in server_app_categ
+    ServerAppObj = ServerAppCateg.objects.filter(server_categ_id=fun_categId)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/manager.py", line 143, in filter
+    return self.get_query_set().filter(*args, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 972, in get_prep_lookup
+    return super(IntegerField, self).get_prep_lookup(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 310, in get_prep_lookup
+    return self.get_prep_value(value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 966, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+[2018-02-24 11:07:18,426] ERROR : Internal Server Error: /autoadmin/server_app_categ/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./autoadmin/views.py", line 69, in server_app_categ
+    ServerAppObj = ServerAppCateg.objects.filter(server_categ_id=fun_categId)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/manager.py", line 143, in filter
+    return self.get_query_set().filter(*args, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 972, in get_prep_lookup
+    return super(IntegerField, self).get_prep_lookup(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 310, in get_prep_lookup
+    return self.get_prep_value(value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 966, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+[2018-02-24 11:07:33,094] ERROR : Internal Server Error: /autoadmin/server_app_categ/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./autoadmin/views.py", line 69, in server_app_categ
+    ServerAppObj = ServerAppCateg.objects.filter(server_categ_id=fun_categId)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/manager.py", line 143, in filter
+    return self.get_query_set().filter(*args, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 972, in get_prep_lookup
+    return super(IntegerField, self).get_prep_lookup(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 310, in get_prep_lookup
+    return self.get_prep_value(value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 966, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+[2018-02-24 11:08:55,428] ERROR : Internal Server Error: /autoadmin/server_app_categ/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./autoadmin/views.py", line 69, in server_app_categ
+    ServerAppObj = ServerAppCateg.objects.filter(server_categ_id=fun_categId)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/manager.py", line 143, in filter
+    return self.get_query_set().filter(*args, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 972, in get_prep_lookup
+    return super(IntegerField, self).get_prep_lookup(lookup_type, value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 310, in get_prep_lookup
+    return self.get_prep_value(value)
+  File "/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 966, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+[2018-02-27 10:56:10,397] ERROR : connect rpyc server error:[Errno 111] Connection refused
+[2018-02-28 09:44:48,531] ERROR : Internal Server Error: /autoadmin/module_run/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./autoadmin/views.py", line 168, in module_run
+    OPresult=tdecode(conn.root.Runcommands(put_string),settings.SECRET_KEY)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/netref.py", line 196, in __call__
+    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/netref.py", line 71, in syncreq
+    return conn.sync_request(handler, oid, *args)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/protocol.py", line 438, in sync_request
+    raise obj
+IndexError: list index out of range
+
+========= Remote Traceback (1) =========
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/protocol.py", line 300, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/protocol.py", line 532, in _handle_call
+    return self._local_objects[oid](*args, **dict(kwargs))
+  File "OMserver.py", line 42, in exposed_Runcommands
+    self.Hosts=self.get_string_array[1]
+IndexError: list index out of range
+
+[2018-02-28 09:45:38,071] ERROR : Internal Server Error: /autoadmin/module_run/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./autoadmin/views.py", line 168, in module_run
+    OPresult=tdecode(conn.root.Runcommands(put_string),settings.SECRET_KEY)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/netref.py", line 196, in __call__
+    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/netref.py", line 71, in syncreq
+    return conn.sync_request(handler, oid, *args)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/protocol.py", line 438, in sync_request
+    raise obj
+IndexError: list index out of range
+
+========= Remote Traceback (1) =========
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/protocol.py", line 300, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/protocol.py", line 532, in _handle_call
+    return self._local_objects[oid](*args, **dict(kwargs))
+  File "OMserver.py", line 42, in exposed_Runcommands
+    self.Hosts=self.get_string_array[1]
+IndexError: list index out of range
+
+[2018-02-28 09:46:11,515] ERROR : Internal Server Error: /autoadmin/module_run/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./autoadmin/views.py", line 168, in module_run
+    OPresult=tdecode(conn.root.Runcommands(put_string),settings.SECRET_KEY)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/netref.py", line 196, in __call__
+    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/netref.py", line 71, in syncreq
+    return conn.sync_request(handler, oid, *args)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/protocol.py", line 438, in sync_request
+    raise obj
+IndexError: list index out of range
+
+========= Remote Traceback (1) =========
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/protocol.py", line 300, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/protocol.py", line 532, in _handle_call
+    return self._local_objects[oid](*args, **dict(kwargs))
+  File "OMserver.py", line 42, in exposed_Runcommands
+    self.Hosts=self.get_string_array[1]
+IndexError: list index out of range
+
+[2018-02-28 09:47:27,817] ERROR : Internal Server Error: /autoadmin/module_run/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./autoadmin/views.py", line 168, in module_run
+    OPresult=tdecode(conn.root.Runcommands(put_string),settings.SECRET_KEY)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/netref.py", line 196, in __call__
+    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/netref.py", line 71, in syncreq
+    return conn.sync_request(handler, oid, *args)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/protocol.py", line 438, in sync_request
+    raise obj
+IndexError: list index out of range
+
+========= Remote Traceback (1) =========
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/protocol.py", line 300, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/protocol.py", line 532, in _handle_call
+    return self._local_objects[oid](*args, **dict(kwargs))
+  File "OMserver.py", line 42, in exposed_Runcommands
+    self.Hosts=self.get_string_array[1]
+IndexError: list index out of range
+
+[2018-02-28 09:55:20,193] ERROR : Internal Server Error: /autoadmin/module_run/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./autoadmin/views.py", line 168, in module_run
+    OPresult=tdecode(conn.root.Runcommands(put_string),settings.SECRET_KEY)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/netref.py", line 196, in __call__
+    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/netref.py", line 71, in syncreq
+    return conn.sync_request(handler, oid, *args)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/protocol.py", line 438, in sync_request
+    raise obj
+IndexError: list index out of range
+
+========= Remote Traceback (1) =========
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/protocol.py", line 300, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/protocol.py", line 532, in _handle_call
+    return self._local_objects[oid](*args, **dict(kwargs))
+  File "OMserver.py", line 42, in exposed_Runcommands
+    self.Hosts=self.get_string_array[1]
+IndexError: list index out of range
+
+[2018-02-28 09:58:45,654] ERROR : Internal Server Error: /autoadmin/module_run/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./autoadmin/views.py", line 168, in module_run
+    OPresult=tdecode(conn.root.Runcommands(put_string),settings.SECRET_KEY)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/netref.py", line 196, in __call__
+    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/netref.py", line 71, in syncreq
+    return conn.sync_request(handler, oid, *args)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/protocol.py", line 438, in sync_request
+    raise obj
+IndexError: list index out of range
+
+========= Remote Traceback (1) =========
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/protocol.py", line 300, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/protocol.py", line 532, in _handle_call
+    return self._local_objects[oid](*args, **dict(kwargs))
+  File "OMserver.py", line 42, in exposed_Runcommands
+    self.Hosts=self.get_string_array[1]
+IndexError: list index out of range
+
+[2018-02-28 10:04:49,634] ERROR : Internal Server Error: /autoadmin/module_run/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./autoadmin/views.py", line 168, in module_run
+    OPresult=tdecode(conn.root.Runcommands(put_string),settings.SECRET_KEY)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/netref.py", line 196, in __call__
+    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/netref.py", line 71, in syncreq
+    return conn.sync_request(handler, oid, *args)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/protocol.py", line 438, in sync_request
+    raise obj
+IndexError: list index out of range
+
+========= Remote Traceback (1) =========
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/protocol.py", line 300, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/protocol.py", line 532, in _handle_call
+    return self._local_objects[oid](*args, **dict(kwargs))
+  File "OMserver.py", line 42, in exposed_Runcommands
+    self.Hosts=self.get_string_array[1]
+IndexError: list index out of range
+
+[2018-02-28 10:08:27,481] ERROR : Internal Server Error: /autoadmin/module_run/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./autoadmin/views.py", line 168, in module_run
+    OPresult=tdecode(conn.root.Runcommands(put_string),settings.SECRET_KEY)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/netref.py", line 196, in __call__
+    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/netref.py", line 71, in syncreq
+    return conn.sync_request(handler, oid, *args)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/protocol.py", line 438, in sync_request
+    raise obj
+IndexError: list index out of range
+
+========= Remote Traceback (1) =========
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/protocol.py", line 300, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/protocol.py", line 532, in _handle_call
+    return self._local_objects[oid](*args, **dict(kwargs))
+  File "OMserver.py", line 42, in exposed_Runcommands
+    self.Hosts=self.get_string_array[1]
+IndexError: list index out of range
+
+[2018-02-28 10:13:06,274] ERROR : Internal Server Error: /autoadmin/module_run/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./autoadmin/views.py", line 168, in module_run
+    OPresult=tdecode(conn.root.Runcommands(put_string),settings.SECRET_KEY)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/netref.py", line 196, in __call__
+    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/netref.py", line 71, in syncreq
+    return conn.sync_request(handler, oid, *args)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/protocol.py", line 438, in sync_request
+    raise obj
+IndexError: list index out of range
+
+========= Remote Traceback (1) =========
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/protocol.py", line 300, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/protocol.py", line 532, in _handle_call
+    return self._local_objects[oid](*args, **dict(kwargs))
+  File "OMserver.py", line 42, in exposed_Runcommands
+    self.Hosts=self.get_string_array[1]
+IndexError: list index out of range
+
+[2018-02-28 10:19:34,956] ERROR : Internal Server Error: /autoadmin/module_run/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./autoadmin/views.py", line 168, in module_run
+    OPresult=tdecode(conn.root.Runcommands(put_string),settings.SECRET_KEY)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/netref.py", line 196, in __call__
+    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/netref.py", line 71, in syncreq
+    return conn.sync_request(handler, oid, *args)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/protocol.py", line 438, in sync_request
+    raise obj
+IndexError: list index out of range
+
+========= Remote Traceback (1) =========
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/protocol.py", line 300, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/protocol.py", line 532, in _handle_call
+    return self._local_objects[oid](*args, **dict(kwargs))
+  File "OMserver.py", line 42, in exposed_Runcommands
+    self.Hosts=self.get_string_array[1]
+IndexError: list index out of range
+
+[2018-02-28 10:20:43,871] ERROR : Internal Server Error: /autoadmin/module_run/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./autoadmin/views.py", line 168, in module_run
+    OPresult=tdecode(conn.root.Runcommands(put_string),settings.SECRET_KEY)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/netref.py", line 196, in __call__
+    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/netref.py", line 71, in syncreq
+    return conn.sync_request(handler, oid, *args)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/protocol.py", line 438, in sync_request
+    raise obj
+IndexError: list index out of range
+
+========= Remote Traceback (1) =========
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/protocol.py", line 300, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/protocol.py", line 532, in _handle_call
+    return self._local_objects[oid](*args, **dict(kwargs))
+  File "OMserver.py", line 42, in exposed_Runcommands
+    self.Hosts=self.get_string_array[1]
+IndexError: list index out of range
+
+[2018-02-28 10:33:02,512] ERROR : Internal Server Error: /autoadmin/module_run/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./autoadmin/views.py", line 168, in module_run
+    OPresult=tdecode(conn.root.Runcommands(put_string),settings.SECRET_KEY)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/netref.py", line 196, in __call__
+    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/netref.py", line 71, in syncreq
+    return conn.sync_request(handler, oid, *args)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/protocol.py", line 438, in sync_request
+    raise obj
+IndexError: list index out of range
+
+========= Remote Traceback (1) =========
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/protocol.py", line 300, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/usr/local/lib/python2.7/site-packages/rpyc-3.2.3-py2.7.egg/rpyc/core/protocol.py", line 532, in _handle_call
+    return self._local_objects[oid](*args, **dict(kwargs))
+  File "OMserver.py", line 42, in exposed_Runcommands
+    self.Hosts=self.get_string_array[1]
+IndexError: list index out of range
+
+[2018-03-16 16:30:41,224] WARNING : Not Found: /favicon.ico
+[2018-03-22 14:20:34,944] WARNING : Not Found: /favicon.ico
+[2018-03-22 15:27:30,415] ERROR : connect rpyc server error:[Errno 111] Connection refused
+[2018-03-23 09:38:34,966] ERROR : connect rpyc server error:[Errno 111] Connection refused
+[2018-03-23 09:59:42,533] ERROR : connect rpyc server error:[Errno 111] Connection refused
+[2018-03-23 11:01:28,166] WARNING : Not Found: /favicon.ico
+[2018-03-23 14:23:57,616] WARNING : Not Found: /favicon.ico
+[2018-03-23 14:27:56,101] WARNING : Not Found: /favicon.ico
+[2018-05-07 09:40:15,372] WARNING : Not Found: /favicon.ico
+[2018-05-08 23:59:32,878] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:22:18,412] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:42:00,194] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:42:22,704] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:42:25,538] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:42:26,498] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:42:27,130] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:42:28,435] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:47:51,310] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:47:53,352] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:47:53,978] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:47:54,500] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:47:54,789] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:02,325] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:03,047] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:03,559] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:04,041] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:04,457] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:04,885] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:05,241] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:05,598] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:15,327] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:16,086] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:16,378] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:16,542] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:16,700] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:16,824] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:16,993] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:17,167] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:17,327] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:18,786] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:19,434] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:19,594] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:19,765] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:20,331] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:20,628] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:20,808] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:45,073] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:45,816] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:46,409] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:46,911] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:47,421] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:47,732] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:48,053] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:48,349] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:48,564] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:48,850] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:51,901] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:52,632] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:53,174] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:53,653] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:54,105] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:54,280] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:54,488] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:54,729] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:54,953] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:55,171] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:55,473] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:56,012] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:56,139] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:56,372] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:56,565] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:56,789] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:57,018] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:57,252] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:57,412] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:57,622] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:57,884] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:58,073] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:58,321] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:58,542] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:58,724] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:58,992] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:59,398] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:48:59,771] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:00,186] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:00,571] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:00,954] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:01,356] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:01,867] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:02,122] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:02,522] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:02,947] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:03,304] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:03,760] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:04,271] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:04,585] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:04,987] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:05,394] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:05,756] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:06,205] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:06,510] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:06,855] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:07,208] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:07,366] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:07,585] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:07,820] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:08,153] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:08,360] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:08,805] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:09,017] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:09,316] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:09,535] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:09,760] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:09,993] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:10,242] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:10,710] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:11,092] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:11,560] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:12,019] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:12,566] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:12,992] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:13,371] WARNING : Not Found: /favicon.ico
+[2018-11-07 14:49:13,846] WARNING : Not Found: /favicon.ico
+[2018-11-09 10:24:40,747] WARNING : Not Found: /favicon.ico
+[2018-11-09 10:46:57,883] WARNING : Not Found: /favicon.ico
+[2018-11-09 10:46:59,339] WARNING : Not Found: /favicon.ico
+[2018-11-09 10:47:02,766] WARNING : Not Found: /favicon.ico
+[2018-11-09 11:54:00,982] ERROR : Invalid HTTP_HOST header: 'omserver.kt.com'. You may need to add u'omserver.kt.com' to ALLOWED_HOSTS.
+[2018-11-09 11:54:01,037] ERROR : Invalid HTTP_HOST header: 'omserver.kt.com'. You may need to add u'omserver.kt.com' to ALLOWED_HOSTS.
+[2018-11-09 11:54:36,137] ERROR : Invalid HTTP_HOST header: 'omserver.kt.com'. You may need to add u'omserver.kt.com' to ALLOWED_HOSTS.
+[2018-11-09 11:54:36,186] ERROR : Invalid HTTP_HOST header: 'omserver.kt.com'. You may need to add u'omserver.kt.com' to ALLOWED_HOSTS.
+[2018-11-09 11:55:02,211] ERROR : Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/handlers/base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/local/python2.7.15/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named OMserverweb.urls
+[2018-11-09 11:55:02,477] ERROR : Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/handlers/base.py", line 108, in get_response
+    response = middleware_method(request)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/middleware/common.py", line 74, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 646, in is_valid_path
+    resolve(path, urlconf)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 521, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/local/python2.7.15/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named OMserverweb.urls
+[2018-11-09 11:58:09,983] ERROR : Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/handlers/base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/local/python2.7.15/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named OMserverweb.urls
+[2018-11-09 11:58:10,120] ERROR : Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/handlers/base.py", line 108, in get_response
+    response = middleware_method(request)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/middleware/common.py", line 74, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 646, in is_valid_path
+    resolve(path, urlconf)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 521, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/local/python2.7.15/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named OMserverweb.urls
+[2018-11-09 11:59:07,615] ERROR : Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/handlers/base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/local/python2.7.15/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./urls.py", line 17, in <module>
+    url(r'^demo/', include('demo.urls')),
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/python2.7.15/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./demo/urls.py", line 1, in <module>
+    from django.conf.urls.defaults import *
+ImportError: No module named defaults
+[2018-11-09 11:59:08,388] ERROR : Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/handlers/base.py", line 108, in get_response
+    response = middleware_method(request)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/middleware/common.py", line 74, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 646, in is_valid_path
+    resolve(path, urlconf)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 521, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/local/python2.7.15/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./urls.py", line 17, in <module>
+    url(r'^demo/', include('demo.urls')),
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/python2.7.15/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./demo/urls.py", line 1, in <module>
+    from django.conf.urls.defaults import *
+ImportError: No module named defaults
+[2018-11-13 10:24:54,926] ERROR : Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/handlers/base.py", line 101, in get_response
+    request.path_info)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 298, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 328, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 323, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+ImportError: No module named OMserverweb.urls
+[2018-11-13 10:24:55,158] ERROR : Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/handlers/base.py", line 89, in get_response
+    response = middleware_method(request)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/middleware/common.py", line 67, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 531, in is_valid_path
+    resolve(path, urlconf)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 420, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 298, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 328, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 323, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+ImportError: No module named OMserverweb.urls
+[2018-11-13 10:27:23,441] ERROR : Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/handlers/base.py", line 101, in get_response
+    request.path_info)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 298, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 328, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 323, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+ImportError: No module named OMserverweb.urls
+[2018-11-13 10:27:23,836] ERROR : Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/handlers/base.py", line 89, in get_response
+    response = middleware_method(request)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/middleware/common.py", line 67, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 531, in is_valid_path
+    resolve(path, urlconf)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 420, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 298, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 328, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 323, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+ImportError: No module named OMserverweb.urls
+[2018-11-13 10:29:01,022] ERROR : Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/handlers/base.py", line 101, in get_response
+    request.path_info)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 298, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 328, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 323, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+ImportError: No module named OMserverweb.urls
+[2018-11-13 10:29:01,179] ERROR : Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/handlers/base.py", line 89, in get_response
+    response = middleware_method(request)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/middleware/common.py", line 67, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 531, in is_valid_path
+    resolve(path, urlconf)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 420, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 298, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 328, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 323, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+ImportError: No module named OMserverweb.urls
+[2018-11-13 10:33:14,409] ERROR : Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/handlers/base.py", line 101, in get_response
+    request.path_info)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 298, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 328, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 323, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+ImportError: No module named OMserverweb.urls
+[2018-11-13 10:33:14,623] ERROR : Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/handlers/base.py", line 89, in get_response
+    response = middleware_method(request)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/middleware/common.py", line 67, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 531, in is_valid_path
+    resolve(path, urlconf)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 420, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 298, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 328, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 323, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+ImportError: No module named OMserverweb.urls
+[2018-11-13 10:33:33,681] ERROR : Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/handlers/base.py", line 101, in get_response
+    request.path_info)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 298, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 328, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 323, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+ImportError: No module named OMserverweb.urls
+[2018-11-13 10:33:33,828] ERROR : Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/handlers/base.py", line 89, in get_response
+    response = middleware_method(request)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/middleware/common.py", line 67, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 531, in is_valid_path
+    resolve(path, urlconf)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 420, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 298, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 328, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 323, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+ImportError: No module named OMserverweb.urls
+[2018-11-13 10:36:37,631] WARNING : Not Found: /static/js/prototype.js
+[2018-11-13 10:36:37,635] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 10:36:37,637] WARNING : Not Found: /static/js/ymPrompt.js
+[2018-11-13 10:36:37,640] WARNING : Not Found: /static/images/loading.gif
+[2018-11-13 10:36:37,642] WARNING : Not Found: /static/js/bash.js
+[2018-11-13 10:36:37,645] WARNING : Not Found: /static/images/02461211.gif
+[2018-11-13 10:36:37,653] WARNING : Not Found: /static/images/cursor_f01.gif
+[2018-11-13 10:36:37,788] WARNING : Not Found: /static/css/common.css
+[2018-11-13 10:36:37,799] WARNING : Not Found: /static/js/ymPrompt.js
+[2018-11-13 10:36:37,809] WARNING : Not Found: /static/js/bash.js
+[2018-11-13 10:36:37,810] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 10:36:37,925] WARNING : Not Found: /favicon.ico
+[2018-11-13 10:37:40,109] WARNING : Not Found: /static/css/common.css
+[2018-11-13 10:37:40,109] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 10:41:05,725] WARNING : Not Found: /static/css/common.css
+[2018-11-13 10:41:05,729] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 10:41:05,735] WARNING : Not Found: /static/js/ymPrompt.js
+[2018-11-13 10:41:05,738] WARNING : Not Found: /static/js/bash.js
+[2018-11-13 10:41:05,741] WARNING : Not Found: /static/images/loading.gif
+[2018-11-13 10:41:05,748] WARNING : Not Found: /static/images/02461211.gif
+[2018-11-13 10:41:05,762] WARNING : Not Found: /static/images/cursor_f01.gif
+[2018-11-13 10:41:05,873] WARNING : Not Found: /static/js/prototype.js
+[2018-11-13 10:41:05,885] WARNING : Not Found: /static/js/ymPrompt.js
+[2018-11-13 10:41:05,895] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 10:41:05,895] WARNING : Not Found: /static/js/bash.js
+[2018-11-13 10:42:47,890] ERROR : Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/handlers/base.py", line 101, in get_response
+    request.path_info)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 298, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 328, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 323, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "./urls.py", line 16, in <module>
+    url(r'^admin/', include(admin.site.urls)),
+NameError: name 'admin' is not defined
+[2018-11-13 10:42:55,332] ERROR : Internal Server Error: /admin
+Traceback (most recent call last):
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/handlers/base.py", line 89, in get_response
+    response = middleware_method(request)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/middleware/common.py", line 67, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 531, in is_valid_path
+    resolve(path, urlconf)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 420, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 298, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 328, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 323, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "./urls.py", line 16, in <module>
+    url(r'^admin/', include(admin.site.urls)),
+NameError: name 'admin' is not defined
+[2018-11-13 10:43:22,267] WARNING : Not Found: /admin
+[2018-11-13 10:43:27,729] WARNING : Not Found: /static/css/common.css
+[2018-11-13 10:43:27,736] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 10:43:27,741] WARNING : Not Found: /static/js/ymPrompt.js
+[2018-11-13 10:43:27,747] WARNING : Not Found: /static/js/bash.js
+[2018-11-13 10:43:27,751] WARNING : Not Found: /static/images/loading.gif
+[2018-11-13 10:43:27,756] WARNING : Not Found: /static/images/02461211.gif
+[2018-11-13 10:43:27,770] WARNING : Not Found: /static/images/cursor_f01.gif
+[2018-11-13 10:43:27,866] WARNING : Not Found: /static/js/prototype.js
+[2018-11-13 10:43:27,883] WARNING : Not Found: /static/js/ymPrompt.js
+[2018-11-13 10:43:27,898] WARNING : Not Found: /static/js/bash.js
+[2018-11-13 10:43:27,898] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 10:46:56,546] WARNING : Not Found: /static/css/common.css
+[2018-11-13 10:46:56,556] WARNING : Not Found: /static/js/ymPrompt.js
+[2018-11-13 10:46:56,560] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 10:46:56,564] WARNING : Not Found: /static/images/loading.gif
+[2018-11-13 10:46:56,567] WARNING : Not Found: /static/js/bash.js
+[2018-11-13 10:46:56,569] WARNING : Not Found: /static/images/02461211.gif
+[2018-11-13 10:46:56,581] WARNING : Not Found: /static/images/cursor_f01.gif
+[2018-11-13 10:46:56,661] WARNING : Not Found: /static/js/prototype.js
+[2018-11-13 10:46:56,677] WARNING : Not Found: /static/js/ymPrompt.js
+[2018-11-13 10:46:56,688] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 10:46:56,689] WARNING : Not Found: /static/js/bash.js
+[2018-11-13 10:53:51,639] WARNING : Not Found: /static/css/common.css
+[2018-11-13 10:53:51,641] WARNING : Not Found: /static/js/prototype.js
+[2018-11-13 10:53:51,642] WARNING : Not Found: /static/js/ymPrompt.js
+[2018-11-13 10:53:51,645] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 10:53:51,646] WARNING : Not Found: /static/js/bash.js
+[2018-11-13 10:53:51,648] WARNING : Not Found: /static/images/loading.gif
+[2018-11-13 10:53:51,651] WARNING : Not Found: /static/images/02461211.gif
+[2018-11-13 10:53:51,652] WARNING : Not Found: /static/js/ymPrompt.js
+[2018-11-13 10:53:51,670] WARNING : Not Found: /static/js/bash.js
+[2018-11-13 10:53:51,671] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 10:53:51,674] WARNING : Not Found: /static/images/cursor_f01.gif
+[2018-11-13 10:53:51,714] WARNING : Not Found: /favicon.ico
+[2018-11-13 10:54:23,982] ERROR : Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/handlers/base.py", line 101, in get_response
+    request.path_info)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 298, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 328, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/core/urlresolvers.py", line 323, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/local/python2.7.15/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "./urls.py", line 21, in <module>
+    url( r'^static/(?P<path>.*)$', 'django.views.static.serve',{ 'document_root': settings.STATIC_URL }),
+NameError: name 'settings' is not defined
+[2018-11-13 10:55:26,892] WARNING : Not Found: /static/css/common.css
+[2018-11-13 10:55:26,896] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 10:55:26,898] WARNING : Not Found: /static/js/ymPrompt.js
+[2018-11-13 10:55:26,900] WARNING : Not Found: /static/js/bash.js
+[2018-11-13 10:55:26,903] WARNING : Not Found: /static/images/loading.gif
+[2018-11-13 10:55:26,905] WARNING : Not Found: /static/images/02461211.gif
+[2018-11-13 10:55:26,935] WARNING : Not Found: /static/images/cursor_f01.gif
+[2018-11-13 10:55:26,957] WARNING : Not Found: /static/js/prototype.js
+[2018-11-13 10:55:26,971] WARNING : Not Found: /static/js/ymPrompt.js
+[2018-11-13 10:55:26,988] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 10:55:26,989] WARNING : Not Found: /static/js/bash.js
+[2018-11-13 10:55:39,430] WARNING : Not Found: /static/css/common.css
+[2018-11-13 10:55:39,433] WARNING : Not Found: /static/js/prototype.js
+[2018-11-13 10:55:39,433] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 10:55:39,435] WARNING : Not Found: /static/js/ymPrompt.js
+[2018-11-13 10:55:39,436] WARNING : Not Found: /static/js/bash.js
+[2018-11-13 10:55:39,438] WARNING : Not Found: /static/images/loading.gif
+[2018-11-13 10:55:39,439] WARNING : Not Found: /static/images/02461211.gif
+[2018-11-13 10:55:39,457] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 10:55:39,459] WARNING : Not Found: /static/images/cursor_f01.gif
+[2018-11-13 10:56:13,654] ERROR : Test Django Logging
+[2018-11-13 10:56:17,346] WARNING : Not Found: /static/js/prototype.js
+[2018-11-13 10:56:41,372] WARNING : Not Found: /static/js/prototype.js
+[2018-11-13 10:56:41,375] WARNING : Not Found: /static/js/ymPrompt.js
+[2018-11-13 10:56:41,377] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 10:56:41,380] WARNING : Not Found: /static/js/bash.js
+[2018-11-13 10:56:41,382] WARNING : Not Found: /static/images/loading.gif
+[2018-11-13 10:56:41,391] WARNING : Not Found: /static/images/02461211.gif
+[2018-11-13 10:56:41,408] WARNING : Not Found: /static/images/cursor_f01.gif
+[2018-11-13 10:56:41,493] WARNING : Not Found: /static/css/common.css
+[2018-11-13 10:56:41,504] WARNING : Not Found: /static/js/ymPrompt.js
+[2018-11-13 10:56:41,516] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 10:56:41,516] WARNING : Not Found: /static/js/bash.js
+[2018-11-13 10:57:42,562] WARNING : Not Found: /static/css/common.css
+[2018-11-13 10:57:42,562] WARNING : Not Found: /static/js/prototype.js
+[2018-11-13 10:57:42,565] WARNING : Not Found: /static/js/ymPrompt.js
+[2018-11-13 10:57:42,566] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 10:57:42,568] WARNING : Not Found: /static/js/bash.js
+[2018-11-13 10:57:42,568] WARNING : Not Found: /static/images/loading.gif
+[2018-11-13 10:57:42,570] WARNING : Not Found: /static/images/02461211.gif
+[2018-11-13 10:57:42,628] WARNING : Not Found: /static/images/cursor_f01.gif
+[2018-11-13 10:57:42,628] WARNING : Not Found: /static/js/ymPrompt.js
+[2018-11-13 10:57:42,637] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 10:57:42,637] WARNING : Not Found: /static/js/bash.js
+[2018-11-13 10:58:18,489] WARNING : Not Found: /static/js/prototype.js
+[2018-11-13 10:58:18,489] WARNING : Not Found: /static/css/common.css
+[2018-11-13 10:58:18,493] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 10:58:18,494] WARNING : Not Found: /static/js/ymPrompt.js
+[2018-11-13 10:58:18,497] WARNING : Not Found: /static/images/loading.gif
+[2018-11-13 10:58:18,497] WARNING : Not Found: /static/js/bash.js
+[2018-11-13 10:58:18,508] WARNING : Not Found: /static/images/02461211.gif
+[2018-11-13 10:58:18,524] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 10:58:18,524] WARNING : Not Found: /static/images/cursor_f01.gif
+[2018-11-13 10:58:20,804] WARNING : Not Found: /static/css/common.css
+[2018-11-13 10:58:20,805] WARNING : Not Found: /static/js/prototype.js
+[2018-11-13 10:58:20,808] WARNING : Not Found: /static/js/ymPrompt.js
+[2018-11-13 10:58:20,808] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 10:58:20,810] WARNING : Not Found: /static/js/bash.js
+[2018-11-13 10:58:20,810] WARNING : Not Found: /static/images/loading.gif
+[2018-11-13 10:58:20,829] WARNING : Not Found: /static/images/02461211.gif
+[2018-11-13 10:58:20,845] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 10:58:20,851] WARNING : Not Found: /static/images/cursor_f01.gif
+[2018-11-13 10:58:21,923] WARNING : Not Found: /static/js/prototype.js
+[2018-11-13 10:58:21,923] WARNING : Not Found: /static/css/common.css
+[2018-11-13 10:58:21,925] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 10:58:21,927] WARNING : Not Found: /static/js/ymPrompt.js
+[2018-11-13 10:58:21,928] WARNING : Not Found: /static/js/bash.js
+[2018-11-13 10:58:21,930] WARNING : Not Found: /static/images/loading.gif
+[2018-11-13 10:58:21,961] WARNING : Not Found: /static/images/02461211.gif
+[2018-11-13 10:58:21,964] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 10:58:21,964] WARNING : Not Found: /static/js/bash.js
+[2018-11-13 10:58:21,966] WARNING : Not Found: /static/images/cursor_f01.gif
+[2018-11-13 10:58:22,618] WARNING : Not Found: /static/css/common.css
+[2018-11-13 10:58:22,618] WARNING : Not Found: /static/js/prototype.js
+[2018-11-13 10:58:22,621] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 10:58:22,621] WARNING : Not Found: /static/js/ymPrompt.js
+[2018-11-13 10:58:22,623] WARNING : Not Found: /static/js/bash.js
+[2018-11-13 10:58:22,624] WARNING : Not Found: /static/images/loading.gif
+[2018-11-13 10:58:22,640] WARNING : Not Found: /static/images/02461211.gif
+[2018-11-13 10:58:22,659] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 10:58:22,662] WARNING : Not Found: /static/images/cursor_f01.gif
+[2018-11-13 10:58:23,366] WARNING : Not Found: /static/js/prototype.js
+[2018-11-13 10:58:23,366] WARNING : Not Found: /static/js/bash.js
+[2018-11-13 10:58:23,369] WARNING : Not Found: /static/js/ymPrompt.js
+[2018-11-13 10:58:23,369] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 10:58:23,371] WARNING : Not Found: /static/images/loading.gif
+[2018-11-13 10:58:23,372] WARNING : Not Found: /static/css/common.css
+[2018-11-13 10:58:23,400] WARNING : Not Found: /static/images/02461211.gif
+[2018-11-13 10:58:23,410] WARNING : Not Found: /static/js/ymPrompt.js
+[2018-11-13 10:58:23,410] WARNING : Not Found: /static/images/cursor_f01.gif
+[2018-11-13 10:58:23,426] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 10:58:23,426] WARNING : Not Found: /static/js/bash.js
+[2018-11-13 10:58:24,186] WARNING : Not Found: /static/css/common.css
+[2018-11-13 10:58:24,187] WARNING : Not Found: /static/js/prototype.js
+[2018-11-13 10:58:24,189] WARNING : Not Found: /static/js/ymPrompt.js
+[2018-11-13 10:58:24,189] WARNING : Not Found: /static/js/bash.js
+[2018-11-13 10:58:24,192] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 10:58:24,192] WARNING : Not Found: /static/images/loading.gif
+[2018-11-13 10:58:24,217] WARNING : Not Found: /static/images/02461211.gif
+[2018-11-13 10:58:24,232] WARNING : Not Found: /static/js/ymPrompt.js
+[2018-11-13 10:58:24,246] WARNING : Not Found: /static/images/cursor_f01.gif
+[2018-11-13 10:58:24,254] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 10:58:24,256] WARNING : Not Found: /static/js/bash.js
+[2018-11-13 10:58:25,077] WARNING : Not Found: /static/css/common.css
+[2018-11-13 10:58:25,077] WARNING : Not Found: /static/js/prototype.js
+[2018-11-13 10:58:25,079] WARNING : Not Found: /static/js/ymPrompt.js
+[2018-11-13 10:58:25,080] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 10:58:25,082] WARNING : Not Found: /static/js/bash.js
+[2018-11-13 10:58:25,082] WARNING : Not Found: /static/images/loading.gif
+[2018-11-13 10:58:25,100] WARNING : Not Found: /static/images/02461211.gif
+[2018-11-13 10:58:25,112] WARNING : Not Found: /static/images/cursor_f01.gif
+[2018-11-13 10:58:25,739] WARNING : Not Found: /static/css/common.css
+[2018-11-13 10:58:25,740] WARNING : Not Found: /static/js/prototype.js
+[2018-11-13 10:58:25,742] WARNING : Not Found: /static/js/ymPrompt.js
+[2018-11-13 10:58:25,743] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 10:58:25,745] WARNING : Not Found: /static/js/bash.js
+[2018-11-13 10:58:25,746] WARNING : Not Found: /static/images/loading.gif
+[2018-11-13 10:58:25,760] WARNING : Not Found: /static/images/02461211.gif
+[2018-11-13 10:58:25,764] WARNING : Not Found: /static/images/cursor_f01.gif
+[2018-11-13 10:58:26,510] WARNING : Not Found: /static/css/common.css
+[2018-11-13 10:58:26,512] WARNING : Not Found: /static/js/prototype.js
+[2018-11-13 10:58:26,513] WARNING : Not Found: /static/js/ymPrompt.js
+[2018-11-13 10:58:26,516] WARNING : Not Found: /static/images/loading.gif
+[2018-11-13 10:58:26,516] WARNING : Not Found: /static/js/bash.js
+[2018-11-13 10:58:26,518] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 10:58:26,544] WARNING : Not Found: /static/images/02461211.gif
+[2018-11-13 10:58:26,544] WARNING : Not Found: /static/js/ymPrompt.js
+[2018-11-13 10:58:26,547] WARNING : Not Found: /static/images/cursor_f01.gif
+[2018-11-13 10:58:26,571] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 10:58:26,572] WARNING : Not Found: /static/js/bash.js
+[2018-11-13 11:01:00,803] ERROR : Test Django Logging
+[2018-11-13 11:01:03,157] WARNING : Not Found: /static/css/common.css
+[2018-11-13 11:01:03,162] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 11:01:03,164] WARNING : Not Found: /static/js/ymPrompt.js
+[2018-11-13 11:01:03,167] WARNING : Not Found: /static/js/bash.js
+[2018-11-13 11:01:03,170] WARNING : Not Found: /static/images/loading.gif
+[2018-11-13 11:01:03,173] WARNING : Not Found: /static/images/02461211.gif
+[2018-11-13 11:01:03,180] WARNING : Not Found: /static/images/cursor_f01.gif
+[2018-11-13 11:01:03,270] WARNING : Not Found: /static/js/prototype.js
+[2018-11-13 11:01:03,277] WARNING : Not Found: /static/js/ymPrompt.js
+[2018-11-13 11:01:03,281] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 11:01:03,282] WARNING : Not Found: /static/js/bash.js
+[2018-11-13 11:01:46,319] WARNING : Not Found: /static/css/common.css
+[2018-11-13 11:01:46,320] WARNING : Not Found: /static/js/prototype.js
+[2018-11-13 11:01:46,330] WARNING : Not Found: /static/js/ymPrompt.js
+[2018-11-13 11:01:46,337] WARNING : Not Found: /static/css/skin/black/ymPrompt.css
+[2018-11-13 11:01:46,338] WARNING : Not Found: /static/js/bash.js
+[2018-11-13 11:01:46,339] WARNING : Not Found: /static/images/loading.gif
+[2018-11-13 11:01:46,341] WARNING : Not Found: /static/images/02461211.gif
+[2018-11-13 11:01:46,355] WARNING : Not Found: /static/images/cursor_f01.gif
+[2018-11-13 11:06:49,418] WARNING : Not Found: /favicon.ico
+[2018-11-13 11:06:54,470] WARNING : Not Found: /favicon.ico
+[2018-11-13 13:41:22,614] WARNING : Not Found: /favicon.ico
