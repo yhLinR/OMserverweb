@@ -2,6 +2,7 @@ from django.conf.urls.defaults import *
 
 urlpatterns = patterns('autoadmin.views',
     (r'^$','index'),
+    (r'login/','login'),
     (r'server_fun_categ/$','server_fun_categ'),
     (r'server_app_categ/$','server_app_categ'),
     (r'server_list/$','server_list'),

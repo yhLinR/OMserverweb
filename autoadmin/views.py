@@ -27,9 +27,13 @@ from django.utils.log import logger
 """
 =OMserver main page
 """
+
 def index(request):
     res_template_dist={'system_name': settings.SYSTEM_NAME}
     return render_to_response('autoadmin/main.html',res_template_dist)
+
+def login(request):
+    return  render_to_response('autoadmin/login.html')
     
 """
 =Add module page
