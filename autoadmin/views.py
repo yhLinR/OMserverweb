@@ -33,7 +33,13 @@ def index(request):
     return render_to_response('autoadmin/main.html',res_template_dist)
 
 def login(request):
-    return  render_to_response('autoadmin/login.html')
+    if request.method == 'POST':
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        print (username,password)
+        if username == 'admin' and password == 'admin':
+            return  HttpResponse('登录成功')
+    return render_to_response('autoadmin/main.html')
     
 """
 =Add module page
